@@ -1,0 +1,6 @@
+c:\users\besho\documents\visual studio 2015\Projects\NineTails\NineTails\bin\Debug\NineTails.exe.config
+C:\Users\besho\Documents\Visual Studio 2015\Projects\NineTails\NineTails\obj\Debug\NineTails.csprojResolveAssemblyReference.cache
+C:\Users\besho\Documents\Visual Studio 2015\Projects\NineTails\NineTails\bin\Debug\NineTails.exe
+C:\Users\besho\Documents\Visual Studio 2015\Projects\NineTails\NineTails\bin\Debug\NineTails.pdb
+C:\Users\besho\Documents\Visual Studio 2015\Projects\NineTails\NineTails\obj\Debug\NineTails.exe
+C:\Users\besho\Documents\Visual Studio 2015\Projects\NineTails\NineTails\obj\Debug\NineTails.pdb
