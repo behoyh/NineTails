@@ -12,9 +12,22 @@ namespace NineTails
         {
             Console.Write("Enter the nine coin values as [H]'s and [T]'s");
 
+           
+
+            Console.WriteLine();
             string input = Console.ReadLine();
 
             char[] initalNode = input.ToCharArray();
+
+            while (initalNode.Count() < 9)
+            {
+                Console.Write("Enter the nine coin values as [H]'s and [T]'s");
+
+                Console.WriteLine();
+
+                initalNode = Console.ReadLine().ToCharArray();
+            }
+
 
             NineTailModel model = new NineTailModel();
 

@@ -18,7 +18,7 @@ namespace NineTails
         {
             List<Edge> edges = GetEdges();
 
-            UnwightedGraph<Vertex> graph = new UnwightedGraph<Vertex>(edges, NumberOfNodes);
+            UnwightedGraph graph = new UnwightedGraph(edges, NumberOfNodes);
 
             tree = graph.BreathFirstSearch(511);
         }
@@ -124,8 +124,8 @@ namespace NineTails
                 {
                     Console.WriteLine(node[i]);
                 }
-                Console.WriteLine();
             }
+            Console.WriteLine();
         }
     }
 }

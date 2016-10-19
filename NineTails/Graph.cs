@@ -54,7 +54,7 @@ namespace NineTails
         }
         protected AbstractGraph(int[][] edges, Vertex[] vertices)
         {
-            for (int i = 0; i < vertices.Length; i++)
+            for (int i = 0; i < vertices.Length -1; i++)
             {
                 verticers.Add(vertices[i]);
             }
@@ -192,7 +192,7 @@ namespace NineTails
 
             int[] parent = new int[verticers.Count()];
 
-            for (int i = 0; i < parent.Length; i++)
+            for (int i = 0; i < parent.Length -1 ; i++)
             {
                 parent[i] = -1;
             }
@@ -230,7 +230,7 @@ namespace NineTails
             List<int> searchOrder = new List<int>();
             int[] parent = new int[verticers.Count()];
 
-            for (int i = 0; i < parent.Length; i++)
+            for (int i = 0; i < parent.Length -1; i++)
             {
                 parent[i] = -1;
             }
@@ -293,7 +293,7 @@ namespace NineTails
 
                 Console.Write($"Path from {verticers[root]} to {verticers[index]}");
 
-                for (int i = path.Count() - 1; i >= 0; i--)
+                for (int i = path.Count(); i >= 0; i--)
                 {
                     Console.Write(path[i] + "- ");
                 }
@@ -302,7 +302,7 @@ namespace NineTails
             {
                 Console.Write($"Root is: {verticers[root]}");
                 Console.Write($"Edges: ");
-                for (int i = 0; i < parent.Length; i++)
+                for (int i = 0; i < parent.Length -1; i++)
                 {
                     if (parent[i] != -1)
                     {
@@ -314,7 +314,7 @@ namespace NineTails
         }
 
     }
-    public class UnwightedGraph<Vertex> : AbstractGraph
+    public class UnwightedGraph : AbstractGraph
     {
         public UnwightedGraph() { }
 
